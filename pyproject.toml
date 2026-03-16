@@ -9,7 +9,7 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-crya = { path = "../crya" }
+crya = { path = "../crya-framework" }
 
 [dependency-groups]
 dev = [

@@ -9,7 +9,13 @@ wheels/
 # Virtual environments
 .venv
 
-/cache/*
-!/cache/.gitkeep
+# Env vars
+.env
+
+/storage/cache/*
+!/storage/cache/.gitkeep
+
+/storage/db/*
+!/storage/db/.gitkeep
 
 /public/hot
