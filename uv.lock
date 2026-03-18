@@ -68,30 +68,13 @@ wheels = [
 [[package]]
 name = "crya"
 version = "0.1.0"
-source = { directory = "../crya-framework" }
+source = { git = "https://github.com/crya-framework/framework#a2317863115c95a41bf7a3f8a7cce0a1cccf00fe" }
 dependencies = [
     { name = "asyncclick" },
     { name = "oxyde" },
     { name = "pydantic-settings" },
     { name = "starlette" },
     { name = "uvicorn" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "asyncclick", specifier = ">=8.3.0.7" },
-    { name = "oxyde", specifier = ">=0.5.2" },
-    { name = "pydantic-settings", specifier = ">=2.13.1" },
-    { name = "starlette", specifier = ">=0.52.1" },
-    { name = "uvicorn", specifier = ">=0.41.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "httpx", specifier = ">=0.28.1" },
-    { name = "pytest", specifier = ">=9.0.2" },
-    { name = "pytest-asyncio", specifier = ">=1.3.0" },
-    { name = "pytest-elegant", specifier = ">=0.1.3" },
 ]
 
 [[package]]
@@ -108,7 +91,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "crya", directory = "../crya-framework" }]
+requires-dist = [{ name = "crya", git = "https://github.com/crya-framework/framework" }]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest", specifier = ">=9.0.2" }]
