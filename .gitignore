@@ -12,8 +12,10 @@ wheels/
 # Env vars
 .env
 
-/storage/cache/*
-!/storage/cache/.gitkeep
+/storage/cache/**
+!/storage/cache/compiled/
+!/storage/cache/compiled/templates/
+!/storage/cache/compiled/templates/.gitkeep
 
 /storage/db/*
 !/storage/db/.gitkeep

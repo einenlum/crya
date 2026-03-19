@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from crya import App, ViteConfig, set_app
+from crya import App, ViteConfig
 
 app = App(
     root_directory=Path(__file__).parent,
@@ -12,6 +12,3 @@ app = App(
     ),
     routes=["routes.web"],
 )
-set_app(app)
-
-from routes import web  # noqa: E402, F401 — must import after set_app

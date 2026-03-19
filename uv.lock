@@ -68,7 +68,7 @@ wheels = [
 [[package]]
 name = "crya"
 version = "0.1.0"
-source = { git = "https://github.com/crya-framework/framework#b383fcf9dbe5e7319ad5ddb9a326ed5202b23c4d" }
+source = { git = "https://github.com/crya-framework/framework#80a62c1d1dab2588b2ab09cfd478aad2329117c4" }
 dependencies = [
     { name = "asyncclick" },
     { name = "oxyde" },
