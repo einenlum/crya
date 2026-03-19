@@ -8,10 +8,16 @@ dependencies = [
     "crya>=0.1.0",
 ]
 
-[dependency-groups]
-dev = [
-    "pytest>=9.0.2",
-]
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["."]
 
 [tool.uv.sources]
 crya = { git = "https://github.com/crya-framework/framework" }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-asyncio>=1.3.0",
+    "pytest-elegant>=0.1.3",
+]
